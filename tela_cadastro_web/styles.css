@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+:root {
+    --background-white: #e0e0e0ec;
+    --background-orange-1: #fa8072;
+    --background-orange-2: #f4a460;
+    --background-orange-3: #ff7f50;
+    --background-orange-4: 	#F4A460;
+    --background-white-1:#F8F8FF;
+    --backgroubd-cinza: #3b3b4f;
+    --backgorund-cinza-claro: #ebe6e6;
+}
+
+body{
+    
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg,
+                            var(--background-orange-1) 0%,
+                            var(--background-orange-3) 40%,
+                            var(--background-orange-2) 75%);
+    position: relative;
+    overflow: hidden;
+}
+
+.container-login {
+    background-color: var(--background-white-1);
+    box-shadow: 10px 5px 5px var(--background-orange-4);
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.titulo-login {
+    font-weight:600;
+    font-size: 30px;
+    color: var(--backgroubd-cinza);
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 5px;
+
+}
+
+.itens-login {
+   display: flex;
+    text-align: center;
+   flex-direction: column;
+   gap: 10px; /*espacamento entre as colunas*/
+   margin-top: 24px; /*espaco para a parte superior*/
+}
+
+.sub-titulo-login {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    border: 1px solid var(--backgroubd-cinza);
+    border-radius: 50px;
+    height: 37px;
+    width: 320px;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 40px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+input[type="text"] {
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur-orange.png);
+}
+
+input[type="email"] {
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/icone-de-courrier-electronique-orange.png);
+}
+
+input[type="password"] {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/7781/7781610.png);
+}
+
+.btn-cadastrar {
+    margin-top: 20px;
+    width: 79%;
+    height: 40px;
+    font-size: 20px;
+    color: var(--backgorund-cinza-claro);
+    background: linear-gradient(-90deg, var(--background-orange-1) 0%,
+                                var(--background-orange-3) 60% , 
+                                var(--background-orange-2) 75%);
+
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+    
+}
+
+.btn-cadastrar:hover{
+    color: var(--background-white-1);
+}
